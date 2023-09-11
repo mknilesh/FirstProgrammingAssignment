@@ -10,6 +10,8 @@
 		F41A091C2AAD7CB200553C16 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F41A091B2AAD7CB200553C16 /* FirebaseAuth */; };
 		F41A091E2AAD7CB200553C16 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F41A091D2AAD7CB200553C16 /* FirebaseFirestore */; };
 		F41A09222AAE4A2500553C16 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A09212AAE4A2500553C16 /* DashboardView.swift */; };
+		F41A09252AAF84A800553C16 /* FinnhubSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F41A09242AAF84A800553C16 /* FinnhubSwift */; };
+		F41A09272AAF867000553C16 /* Finnhub-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F41A09262AAF867000553C16 /* Finnhub-Info.plist */; };
 		F488F1152AAD4F5D009A3A02 /* FirstProgrammingAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F1142AAD4F5D009A3A02 /* FirstProgrammingAssignmentApp.swift */; };
 		F488F1172AAD4F5D009A3A02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F1162AAD4F5D009A3A02 /* ContentView.swift */; };
 		F488F1192AAD4F5E009A3A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488F1182AAD4F5E009A3A02 /* Assets.xcassets */; };
@@ -39,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		F41A09212AAE4A2500553C16 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		F41A09262AAF867000553C16 /* Finnhub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Finnhub-Info.plist"; sourceTree = "<group>"; };
 		F488F1112AAD4F5D009A3A02 /* FirstProgrammingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProgrammingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F488F1142AAD4F5D009A3A02 /* FirstProgrammingAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProgrammingAssignmentApp.swift; sourceTree = "<group>"; };
 		F488F1162AAD4F5D009A3A02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41A09252AAF84A800553C16 /* FinnhubSwift in Frameworks */,
 				F41A091C2AAD7CB200553C16 /* FirebaseAuth in Frameworks */,
 				F41A091E2AAD7CB200553C16 /* FirebaseFirestore in Frameworks */,
 			);
@@ -120,6 +124,7 @@
 				F488F11A2AAD4F5E009A3A02 /* FirstProgrammingAssignment.entitlements */,
 				F488F11B2AAD4F5E009A3A02 /* Preview Content */,
 				F41A09212AAE4A2500553C16 /* DashboardView.swift */,
+				F41A09262AAF867000553C16 /* Finnhub-Info.plist */,
 			);
 			path = FirstProgrammingAssignment;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			packageProductDependencies = (
 				F41A091B2AAD7CB200553C16 /* FirebaseAuth */,
 				F41A091D2AAD7CB200553C16 /* FirebaseFirestore */,
+				F41A09242AAF84A800553C16 /* FinnhubSwift */,
 			);
 			productName = FirstProgrammingAssignment;
 			productReference = F488F1112AAD4F5D009A3A02 /* FirstProgrammingAssignment.app */;
@@ -243,6 +249,7 @@
 			mainGroup = F488F1082AAD4F5D009A3A02;
 			packageReferences = (
 				F41A091A2AAD7CB200553C16 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F41A09232AAF84A800553C16 /* XCRemoteSwiftPackageReference "FinnhubSwift" */,
 			);
 			productRefGroup = F488F1122AAD4F5D009A3A02 /* Products */;
 			projectDirPath = "";
@@ -263,6 +270,7 @@
 				F488F11D2AAD4F5E009A3A02 /* Preview Assets.xcassets in Resources */,
 				F488F1192AAD4F5E009A3A02 /* Assets.xcassets in Resources */,
 				F488F1442AAD6F00009A3A02 /* GoogleService-Info.plist in Resources */,
+				F41A09272AAF867000553C16 /* Finnhub-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +653,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		F41A09232AAF84A800553C16 /* XCRemoteSwiftPackageReference "FinnhubSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kurtmcintire/FinnhubSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -657,6 +673,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F41A091A2AAD7CB200553C16 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		F41A09242AAF84A800553C16 /* FinnhubSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41A09232AAF84A800553C16 /* XCRemoteSwiftPackageReference "FinnhubSwift" */;
+			productName = FinnhubSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

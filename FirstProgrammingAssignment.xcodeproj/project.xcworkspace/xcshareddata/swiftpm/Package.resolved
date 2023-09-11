@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "finnhubswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kurtmcintire/FinnhubSwift.git",
+      "state" : {
+        "revision" : "e32d9c7260a0c5830139a08800d7c72809cc363f",
+        "version" : "1.1.1"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk.git",
