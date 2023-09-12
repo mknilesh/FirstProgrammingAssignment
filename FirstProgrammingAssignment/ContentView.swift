@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var email = ""
     @State var pass = ""
     @State var loggedIn = false
+    @State var error = ""
     
     var body: some View {
         if loggedIn {
@@ -56,7 +57,15 @@ struct ContentView: View {
                     })
                 }
                 .padding()
-                
+                if error != "" {
+                    VStack {
+                        Divider()
+                        Text(error)
+                            .foregroundStyle(.red)
+                            .frame(width: 300)
+                        Divider()
+                    }
+                }
                 Spacer()
             }
             .onAppear{
@@ -72,6 +81,7 @@ struct ContentView: View {
     func signin() {
         Auth.auth().signIn(withEmail: email, password: pass) {result, error in
             if error != nil {
+                self.error = error!.localizedDescription
                 print(error!.localizedDescription)
             }
         }
@@ -80,6 +90,7 @@ struct ContentView: View {
     func register() {
         Auth.auth().createUser(withEmail: email, password: pass) { result, error in
             if error != nil {
+                self.error = error!.localizedDescription
                 print(error!.localizedDescription)
             }
         }
