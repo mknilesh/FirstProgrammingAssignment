@@ -7,10 +7,7 @@ This is an iOS application that was built on XCode via Swift. It allows users to
 ### Local Set Up Instructions
 1. Clone the repository on your local device
 2. Open the folder or .xcodeproj file in XCode
-3. Click the play button near the top left to run the application on a simulator
-<br>
-OR
-<br>
-Connect a device to your laptop and run it on the device by following the steps in this tutorial:
-<br>
+3. Click the play button near the top left to run the application on a simulator  
+OR  
+Connect a device to your laptop and run it on the device by following the steps in this tutorial:  
 https://www.youtube.com/watch?v=blnXWaOK7i0
