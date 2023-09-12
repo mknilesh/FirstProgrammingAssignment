@@ -11,4 +11,6 @@ This is an iOS application that was built on XCode via Swift. It allows users to
 <br>
 OR
 <br>
-Connect a device to your laptop and run it on the device by following the steps in this tutorial: https://www.youtube.com/watch?v=blnXWaOK7i0
+Connect a device to your laptop and run it on the device by following the steps in this tutorial:
+<br>
+https://www.youtube.com/watch?v=blnXWaOK7i0
